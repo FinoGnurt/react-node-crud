@@ -1,0 +1,31 @@
+GET http://localhost:3000
+
+###
+POST http://localhost:3000/create
+Content-Type: application/json
+
+{
+    "title":"hello world", 
+    "description":"10 diem",
+    "content":"lorem"
+}
+
+###
+GET http://localhost:3000/get
+
+###
+PUT http://localhost:3000/put/1
+Content-Type: application/json
+
+{
+    "title":"hello world123", 
+    "description":"10 diem123",
+    "content":"lorem123"
+}
+
+###
+DELETE http://localhost:3000/destroy/1
+
+
+###
+GET  http://localhost:3000/get_one/7
